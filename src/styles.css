@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
 body {
-  background-color: #f6f6f6;
-  color: #000000;
-  /* font-family: 'Lato', sans-serif; */
-  font-family: "Noto Serif", serif;
-  margin: 20px;
+  font-family: var(--main-font-family);
+  background: #e2dedb;
+  color: #b3aca7;
 }
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+.icon-paw {
+  color: #191919;
 }
 .menu {
   text-transform: uppercase;
@@ -91,4 +93,122 @@ span {
 }
 .item:nth-child(7) {
   transition-delay: 0.15s;
+}
+
+/***********************************************************/
+/* HTML PAGE: CONTACT                                      */
+/***********************************************************/
+/* CSS variable for consistent font-family */
+:root {
+  --main-font-family: "Lato", sans-serif;
+  --sub-font-family: "Karla", sans-serif;
+}
+
+header {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#form-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+
+/* Added to the image to the container, just for the shadow effect */
+#form-img-container {
+  max-width: 80%;
+  min-width: 500px;
+  height: auto;
+  margin: 10em;
+}
+
+#form-input {
+  position: absolute;
+  width: 100%;
+  max-width: 470px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: var(--sub-font-family);
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: rgba(255, 255, 255, 0.25);
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  transition: all 0.3s ease-in-out;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #57514c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #bbb5af;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.25);
+  outline: none;
+  color: #726659;
+  font-family: var(--sub-font-family);
+  font-size: 0.875em;
+  border: solid 1px #b3aca7;
+  transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 470px;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  font-family: var(--sub-font-family);
+  font-size: 0.875em;
+  color: #57514c;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
 }

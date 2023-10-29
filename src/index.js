@@ -1,6 +1,6 @@
 const menuBarNode = document.querySelector(".menu");
 const menuLinks = [
-  { text: "menu", class: "label" },
+  { text: "meow-nu", class: "label" },
   { text: "", class: "spacer" },
   { text: "treatments", class: "item" },
   { text: "fitness", class: "item" },
@@ -15,3 +15,8 @@ for (let i = 0; i < menuLinks.length; i++) {
   menuDivEl.appendChild(menuSpanEl);
   menuBarNode.appendChild(menuDivEl);
 }
+
+// ************************************************************************ //
+// EVENT HANDLER FOR CONTACT PAGE
+// ************************************************************************ //
+const 
