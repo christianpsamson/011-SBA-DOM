@@ -1,20 +1,20 @@
-// const menuBarNode = document.querySelector(".menu");
-// const menuLinks = [
-//   { text: "meow-nu", class: "label" },
-//   { text: "", class: "spacer" },
-//   { text: "treatments", class: "item" },
-//   { text: "fitness", class: "item" },
-//   { text: "book now", class: "item" },
-// ];
-// //Create <div> elements for the menu bar
-// for (let i = 0; i < menuLinks.length; i++) {
-//   const menuDivEl = document.createElement("div");
-//   menuDivEl.classList.add(menuLinks[i].class);
-//   const menuSpanEl = document.createElement("span");
-//   menuSpanEl.textContent = menuLinks[i].text;
-//   menuDivEl.appendChild(menuSpanEl);
-//   menuBarNode.appendChild(menuDivEl);
-// }
+const menuBarNode = document.querySelector(".menu");
+const menuLinks = [
+  { text: "meow-nu", class: "label" },
+  { text: "", class: "spacer" },
+  { text: "treatments", class: "item" },
+  { text: "fitness", class: "item" },
+  { text: "book now", class: "item" },
+];
+//Create <div> elements for the menu bar
+for (let i = 0; i < menuLinks.length; i++) {
+  const menuDivEl = document.createElement("div");
+  menuDivEl.classList.add(menuLinks[i].class);
+  const menuSpanEl = document.createElement("span");
+  menuSpanEl.textContent = menuLinks[i].text;
+  menuDivEl.appendChild(menuSpanEl);
+  menuBarNode.appendChild(menuDivEl);
+}
 
 //=====================================================================//
 // Event handler for contact page
@@ -54,6 +54,17 @@ const handlingContactForm = (event) => {
     formMsgErr.textContent =
       "Please enter a brief message about your reason to contact us.";
     formMsgErr.style.display = "block";
+  }
+
+  // After handling form submission and error messages, reset the form
+  if (
+    !formNameErr.classList.contains("error") &&
+    !formEmailErr.classList.contains("error") &&
+    !formNumErr.classList.contains("error") &&
+    !formMsgErr.classList.contains("error")
+  ) {
+    // Reset the form fields
+    event.target.reset();
   }
 };
 //=====================================================================//
