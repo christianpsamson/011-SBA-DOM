@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&family=Lato:wght@100;400;700&display=swap");
 body {
   font-family: var(--main-font-family);
   background: #e2dedb;
@@ -174,6 +174,15 @@ textarea:hover::placeholder {
 input:hover {
   background: #b3aca7;
   color: #e2dedb;
+}
+
+/* Form: Inline Error Message */
+.error {
+  color: rgb(100, 4, 4);
+  background: rgba(255, 255, 255, 0.25);
+  padding: 15px;
+  font-size: 0.75em;
+  font-weight: 400;
 }
 
 textarea {
