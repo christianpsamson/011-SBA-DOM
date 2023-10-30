@@ -2,6 +2,8 @@
 SBA 316 - DOM MANIPULATION
 ========================================
 
+[SBA 316 - DOM - Screenshot.pdf](https://github.com/christianpsamson/011-SBA-DOM/files/13200476/SBA.316.-.DOM.-.Screenshot.pdf)
+
 ========================================
 LIMITATION:
 ========================================
