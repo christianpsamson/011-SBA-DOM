@@ -1,5 +1,5 @@
 //=====================================================================//
-// For creating the menu bar items
+// For creating the menu bar items using array
 //=====================================================================//
 const menuBarNode = document.querySelector(".menu");
 const menuLinks = [
@@ -8,6 +8,7 @@ const menuLinks = [
   { text: "treatments", class: "item" },
   { text: "fitness", class: "item" },
   { text: "book now", class: "item" },
+  { text: "partner store", class: "item" },
 ];
 //Create <div> elements for the menu bar
 for (let i = 0; i < menuLinks.length; i++) {
@@ -20,7 +21,7 @@ for (let i = 0; i < menuLinks.length; i++) {
 }
 
 //=====================================================================//
-// Event handler for contact page
+// Event handler - handlingContactForm, for contact page using "submit"
 //=====================================================================//
 const handlingContactForm = (event) => {
   event.preventDefault();
@@ -71,7 +72,25 @@ const handlingContactForm = (event) => {
   }
 };
 //=====================================================================//
-// Register Event Handler for contact page
+// Register Event Handler for contact page on "submit"
 //=====================================================================//
 let formEl = document.getElementById("form-input");
 formEl.addEventListener("submit", handlingContactForm);
+
+//=====================================================================//
+// Event handler - handleMenuButtons, using "click"
+//=====================================================================//
+const handleMenuButtons = (event) => {
+  event.preventDefault;
+  const menuSelectedName = event.target.innerText;
+  const windowHeight = window.outerHeight;
+  console.log(event.target.tagName);
+  if (menuSelectedName === "PARTNER STORE") {
+    window.open("https://happyandpolly.com");
+  }
+};
+//=====================================================================//
+// Register Event Handler for menu bar using "click"
+//=====================================================================//
+let menuEl = document.querySelector(".menu");
+menuEl.addEventListener("click", handleMenuButtons);
