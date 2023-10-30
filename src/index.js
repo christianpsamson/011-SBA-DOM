@@ -25,17 +25,36 @@ for (let i = 0; i < menuLinks.length; i++) {
 //=====================================================================//
 const handlingContactForm = (event) => {
   event.preventDefault();
-  let formName = document.getElementById("name");
-  let formNameErr = document.getElementById("nameErr");
+  // In lieu of the following line of code, firstElementChild was used for name field as per requirment
+  // let formName = document.getElementById("name");
+
   let formEmail = document.getElementById("email");
-  let formEmailErr = document.getElementById("emailErr");
   let formNum = document.getElementById("number");
-  let formNumErr = document.getElementById("numErr");
   let formMsg = document.getElementById("message");
+
+  let formNameErr = document.getElementById("nameErr");
+  let formEmailErr = document.getElementById("emailErr");
+  let formNumErr = document.getElementById("numErr");
   let formMsgErr = document.getElementById("msgErr");
 
+  // The following lines of code will reset or remove the class=error
+  formNameErr.classList.remove("error");
+  formEmailErr.classList.remove("error");
+  formNumErr.classList.remove("error");
+  formMsgErr.classList.remove("error");
+
+  formNameErr.textContent = "";
+  formEmailErr.textContent = "";
+  formNumErr.textContent = "";
+  formMsgErr.textContent = "";
+
+  formNameErr.style.display = "none";
+  formEmailErr.style.display = "none";
+  formNumErr.style.display = "none";
+  formMsgErr.style.display = "none";
+
   // If any of the input details is empty, display an inline error message
-  if (formName.value === "") {
+  if (firstChildEl.value === "") {
     formNameErr.classList.add("error");
     formNameErr.textContent = "Please enter a valid name.";
     formNameErr.style.display = "block";
@@ -75,6 +94,7 @@ const handlingContactForm = (event) => {
 // Register Event Handler for contact page on "submit"
 //=====================================================================//
 let formEl = document.getElementById("form-input");
+let firstChildEl = formEl.firstElementChild;
 formEl.addEventListener("submit", handlingContactForm);
 
 //=====================================================================//

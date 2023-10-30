@@ -1,22 +1,22 @@
-==========================================
+========================================
 SBA 316 - DOM MANIPULATION
-==========================================
+========================================
 
-==========================================
+========================================
 LIMITATION:
-==========================================
+========================================
 
 The developed web page is focused on the Contact Us form, in order to accomplish the absolute minimum requirement. Hence, the assumption is that the "Book Now" button is selected to show this page.
 
 Moreover, the menu bar buttons are not linked to any html pages. These were created only to implement the requirement for attiration and element manipulation.
 
-==========================================
+========================================
 REQUIREMENTS INCLUDED:
-==========================================
+========================================
 
 - selectElementByID: used in event handler 'handlingContactForm'
 - querySelector: used in creating the menu bar items using array
-- parent-child sibling relationship:
+- parent-child sibling relationship: firstElementChild was used in the event handler 'handlingContactForm'
 - iterate through elements: used in creating menu navigation bar
 - createElement:
   (1) inline error handling in contact form; fields cannot be empty
