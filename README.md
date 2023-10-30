@@ -8,7 +8,7 @@ LIMITATION:
 
 The developed web page is focused on the Contact Us form, in order to accomplish the absolute minimum requirement. Hence, the assumption is that the "Book Now" button is selected to show this page.
 
-Moreover, the menu bar buttons are not linked to any html pages. These were created only to implement the requirement for attiration and element manipulation.
+Moreover, the menu bar buttons are not linked to any html pages. These were created only to implement the requirement for itiration and element manipulation.
 
 ========================================
 REQUIREMENTS INCLUDED:
