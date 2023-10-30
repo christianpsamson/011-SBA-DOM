@@ -4,7 +4,7 @@ SBA 316 - DOM MANIPULATION
 REQUIREMENTS INCLUDED:
 
 - selectElementByID: event handler 'handlingContactForm'
-- querySelector:
+- querySelector: creating the menu bar items using array
 - parent-child sibling relationship:
 - iterate through elements: menu navigation bar
 - createElement: inline error handling in contact form; fields cannot be empty

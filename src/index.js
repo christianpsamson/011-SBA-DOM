@@ -1,3 +1,6 @@
+//=====================================================================//
+// For creating the menu bar items
+//=====================================================================//
 const menuBarNode = document.querySelector(".menu");
 const menuLinks = [
   { text: "meow-nu", class: "label" },
